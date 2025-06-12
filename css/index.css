@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f4d04e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container {
+    background-color: white;
+    max-width: 32.7rem;
+    height: 50rem;
+    border-radius: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    outline: 1px solid #111111;
+    box-shadow: 1rem 1rem #111111;
+}
+
+.avatar-image {
+    position: absolute;
+    left: 2.4rem;
+    bottom: 2.4rem;
+
+}
+
+.content-image-mobile {
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    border-radius: 1rem;
+}
+
+.main-container div div:first-of-type {
+    background-color: #f4d04e;
+    width: 7.3rem;
+    height: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #111111;
+    font-weight: 800;
+    margin-right: 20rem;
+}
+
+.main-container div p:first-of-type {
+    font-weight: 500;
+    color: #111111;
+    font-size: 1.2rem;
+    
+}
+
+.main-container div h3 {
+    font-weight: 800;
+    color: #111111;
+    font-size: 2rem;
+}
+
+.main-container div p:last-of-type {
+    color: #6b6b6b;
+    font-size: 1.4rem;
+}
+
+.main-container > div {
+    margin-left: 2.4rem;
+    margin-bottom: 2.7rem;
+    width: 27.9rem;
+    height: 17.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container > p:last-child {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #111111;
+    margin-left: 6.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.main-container > div h3:hover {
+    color: #f4d04e;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+.content-image {
+    display: none;
+}
+
+.content-image-mobile {
+    max-width: 100%;
+}
+
+}
+
+@media (min-width: 768px) {
+.content-image-mobile {
+    display: none;
+}
+
+.main-container {
+    max-width: 38.4rem;
+    height: 52.2rem;
+}
+
+.content-image {
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    border-radius: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+.main-container > div {
+    margin-bottom: 2.7rem;
+    max-width: 33.6rem;
+    height: 19.4rem;
+    justify-content: space-between;
+}
+
+.main-container > div div {
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+}
+
+.main-container div p:first-of-type {
+    font-size: 1.4rem;
+}
+
+.main-container div h3 {
+    font-size: 2.4rem;
+}
+
+.main-container div p:last-child {
+    font-size: 1.6rem;
+}
+
+}
